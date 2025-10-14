@@ -1,1 +1,5 @@
-console.log('Start Server')
+
+function start(){
+	console.log('server')
+}
+start();
