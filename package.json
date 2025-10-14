@@ -1,0 +1,19 @@
+{
+  "name": "boilerplate-node",
+  "version": "1.0.0",
+  "description": "Boilerplate para criação de projetos back-end.",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/everton-ribeiro/boilerplate-node.git"
+  },
+  "keywords": [],
+  "author": "Everton Ribeiro",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "5.6.1"
+  }
+}
