@@ -1,2 +1,2 @@
-pnpm dlx lint
-pnpm dlx test
+pnpm  lint
+pnpm  test

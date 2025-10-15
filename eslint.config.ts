@@ -11,9 +11,10 @@ export default defineConfig([
   globalIgnores([
     "node_modules/*",
     "eslint.config.ts",
-    "vite.config.ts",
+    "vitest.config.ts",
     "prettier.config.ts",
 		"tsup.config.ts",
+		"commitlint.config.ts",
      "**/*.spec.ts"
   ]),
   {
