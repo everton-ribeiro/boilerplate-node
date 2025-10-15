@@ -13,7 +13,7 @@ const typeEnum = [
   "revert",
   "style",
   "test"
-]
+];
 
 const Configuration: UserConfig = {
   extends: ["@commitlint/config-conventional"],
