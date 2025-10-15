@@ -15,7 +15,8 @@ export default defineConfig([
     "prettier.config.ts",
 		"tsup.config.ts",
 		"commitlint.config.ts",
-     "**/*.spec.ts"
+		"prisma.config.ts",
+    "**/*.spec.ts"
   ]),
   {
     files: ["**/*.{js,mjs,cjs}"],
@@ -51,7 +52,8 @@ export default defineConfig([
             'parent',
             'sibling',
             'index',
-            'type'],
+            'type'
+					],
           pathGroups: [
             {
               group: 'builtin',

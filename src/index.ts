@@ -1,15 +1,20 @@
 import Fastify, { FastifyInstance } from "fastify";
 
-import { sum } from "@src/sum";
+import { prisma } from "@shared/database";
 
 const server: FastifyInstance = Fastify();
 
 // Declare a route
-server.get("/", (request, reply) => {
-	reply.send({ hello: "world" });
-});
+server.get("/", async (request, reply) => {
+	const createUser = await prisma.user.create({
+		data: {
+			email: "everton@teste.com",
+			name: "Everton Ribeiro",
+		},
+	});
 
-console.log(sum(1, 2));
+	reply.send({ user: createUser.id });
+});
 
 // Run the server!
 server.listen({ port: 3000 }, err => {
