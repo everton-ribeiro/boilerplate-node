@@ -1,12 +1,12 @@
 import Fastify, { FastifyInstance } from "fastify";
 
-import { prisma } from "@shared/database";
+import { database } from "@shared/database";
 
 const server: FastifyInstance = Fastify();
 
 // Declare a route
 server.get("/", async (request, reply) => {
-	const createUser = await prisma.user.create({
+	const createUser = await database.user.create({
 		data: {
 			email: "everton@teste.com",
 			name: "Everton Ribeiro",
